@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Geeta Rani | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#FBBF24',
+                            yellowDark: '#D97706',
+                            yellowLight: '#FEF3C7',
+                            slate: '#0F172A',
+                            body: '#334155',
+                            cardBg: '#FFFFFF',
+                            bgOff: '#F8FAFC',
+                            accent: '#3B82F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+        .yellow-blob {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        }
+        .polaroid-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased selection:bg-amber-200 selection:text-amber-900">
+
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+        <!-- Logo / Name -->
+        <a href="#hero" class="flex items-center gap-3 group">
+            <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-900 font-display font-extrabold flex items-center justify-center text-xl shadow-sm group-hover:scale-105 transition-transform">
+                G
+            </div>
+
+            <div class="flex flex-col">
+                <span class="font-display font-bold text-slate-900 text-lg leading-tight group-hover:text-amber-600 transition-colors">
+                    Guru Geeta Rani
+                </span>
+
+                <span class="text-xs text-slate-500 font-medium">
+                    Full Stack & AI Developer
+                </span>
+            </div>
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2 text-sm font-semibold text-slate-600">
+
+            <a href="#about"
+               class="px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">
+                About
+            </a>
+
+            <a href="#experience"
+               class="px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">
+                Experience
+            </a>
+
+            <a href="#projects"
+               class="px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">
+                Projects
+            </a>
+
+            <a href="#skills"
+               class="px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">
+                Skills
+            </a>
+
+            <a href="#achievements"
+               class="px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">
+                Highlights
+            </a>
+
+        </nav>
+
+
+        <!-- Desktop Social Links + Contact -->
+        <div class="hidden md:flex items-center gap-3">
+
+            <!-- GitHub -->
+            <a href="https://github.com/gitgeetahub"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="p-2.5 rounded-xl border border-slate-200 hover:border-slate-300 text-slate-700 hover:bg-slate-50 transition"
+               title="GitHub Profile">
+
+                <i class="fa-brands fa-github text-lg"></i>
+
+            </a>
+
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/Geeta_Rani31/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="p-2.5 rounded-xl border border-slate-200 hover:border-slate-300 text-slate-700 hover:bg-slate-50 transition"
+               title="LeetCode Profile">
+
+                <i class="fa-solid fa-code text-lg"></i>
+
+            </a>
+
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/geeta-rani-801137409/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="p-2.5 rounded-xl border border-slate-200 hover:border-slate-300 text-slate-700 hover:bg-slate-50 transition"
+               title="LinkedIn Profile">
+
+                <svg class="w-5 h-5"
+                     viewBox="0 0 24 24"
+                     fill="currentColor">
+
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.57V8.99H3.56v11.46zM22.22 0H1.78C.8 0 0 .8 0 1.78v20.44C0 23.2.8 24 1.78 24h20.44C23.2 24 24 23.2 24 22.22V1.78C24 .8 23.2 0 22.22 0z"/>
+
+                </svg>
+
+            </a>
+
+
+            <!-- Contact Me -->
+            <a href="#contact"
+               class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-sm hover:shadow transition flex items-center gap-2 text-sm">
+
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn"
+                class="md:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+
+            <i class="fa-solid fa-bars text-xl"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+         class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+
+        <a href="#about"
+           class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-100">
+            About
+        </a>
+
+        <a href="#experience"
+           class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-100">
+            Experience
+        </a>
+
+        <a href="#projects"
+           class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-100">
+            Projects
+        </a>
+
+        <a href="#skills"
+           class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-100">
+            Skills
+        </a>
+
+        <a href="#achievements"
+           class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-100">
+            Highlights
+        </a>
+
+
+        <!-- Mobile Social Links -->
+        <div class="pt-2 flex items-center gap-3">
+
+            <!-- GitHub -->
+            <a href="https://github.com/gitgeetahub"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="p-2.5 rounded-xl border border-slate-200 text-slate-700"
+               title="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/Geeta_Rani31/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="p-2.5 rounded-xl border border-slate-200 text-slate-700"
+               title="LeetCode">
+
+                <i class="fa-solid fa-code"></i>
+
+            </a>
+
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/geeta-rani-801137409/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="p-2.5 rounded-xl border border-slate-200 text-slate-700"
+               title="LinkedIn">
+
+                <svg class="w-5 h-5"
+                     viewBox="0 0 24 24"
+                     fill="currentColor">
+
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.57V8.99H3.56v11.46zM22.22 0H1.78C.8 0 0 .8 0 1.78v20.44C0 23.2.8 24 1.78 24h20.44C.8 24 24 24 24 22.22V1.78C24 .8 23.2 0 22.22 0z"/>
+
+                </svg>
+
+            </a>
+
+
+            <!-- Contact Me -->
+            <a href="#contact"
+               class="mobile-nav-link flex-1 bg-amber-400 text-slate-950 font-bold text-center py-2.5 rounded-xl">
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+    <main>
+        <section id="hero" class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-amber-50/60 via-slate-50 to-slate-50 border-b border-slate-200/60">
+            <!-- Background Decorative Blobs -->
+            <div class="absolute top-12 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none overflow-hidden">
+                <div class="absolute -top-10 -left-10 w-96 h-96 bg-amber-200/40 rounded-full blur-3xl"></div>
+                <div class="absolute top-1/2 right-0 w-80 h-80 bg-blue-100/50 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Hero Content Left -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-300/80 px-3.5 py-1.5 rounded-full text-amber-900 text-xs font-bold uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            3rd Year CSE @ Anurag University • CGPA: 8.35
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                            Hi, I'm <span class="bg-amber-300 px-2.5 py-0.5 rounded-lg inline-block transform -rotate-1 shadow-sm text-slate-950">GURU GEETA</span> RANI
+                        </h1>
+
+                        <p class="text-lg sm:text-xl font-bold text-amber-700 tracking-wide uppercase">
+                            Full-Stack Web Developer & Generative AI Enthusiast
+                        </p>
+
+                        <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+                            Passionate third-year CSE student with hands-on experience in MERN Stack, Python, Flask, and Gen AI. I specialize in crafting scalable web applications, RESTful APIs, and intuitive user experiences with clean architecture.
+                        </p>
+
+                        <div class="pt-2 flex flex-wrap gap-4 items-center">
+                            <a href="#projects" class="bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                                <i class="fa-solid fa-code text-amber-400"></i> View My Work
+                            </a>
+                            <button onclick="openResumeModal()" class="bg-white hover:bg-slate-100 text-slate-800 font-semibold px-6 py-3.5 rounded-xl border border-slate-300 shadow-sm transition flex items-center gap-2">
+                                <i class="fa-solid fa-file-pdf text-amber-600"></i> View Resume
+                            </button>
+                            <button onclick="copyContactInfo('geetaaa.rani31@gmail.com')" class="p-3.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 shadow-sm transition group" title="Copy Email">
+                                <i class="fa-regular fa-copy group-hover:scale-110 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- Quick Badges -->
+                        <div class="pt-4 border-t border-slate-200/80 flex flex-wrap gap-6 text-sm text-slate-600">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-amber-500"></i>
+                                <span>Hyderabad, Telangana</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-briefcase text-amber-500"></i>
+                                <span>SmartBridge Intern</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-trophy text-amber-500"></i>
+                                <span>State Typewriting Topper</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Right Interactive Frame (First Slide Polaroid Feature) -->
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                        <div class="relative max-w-sm w-full">
+                            <!-- Canva-style decorative yellow accent block -->
+                            <div class="absolute -inset-2 bg-amber-400 rounded-3xl transform rotate-2 opacity-90 blur-xs"></div>
+                            
+                            <!-- Main Polaroid Card -->
+                            <div class="relative bg-white rounded-2xl p-5 polaroid-shadow border border-slate-100 text-slate-800 flex flex-col items-center">
+                                
+                                <!-- Image Display Area -->
+                                <div class="relative w-full aspect-[4/5] bg-slate-100 rounded-xl overflow-hidden mb-4 border border-slate-200 group flex items-center justify-center">
+                                    <img id="heroAvatar" src="images/geeta.jpeg" alt="Guru Geeta Rani Profile" class="w-full h-full object-cover transition duration-300">
+                                    
+                                    <!-- Hover Overlay for Image Upload -->
+                                    <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-white text-center cursor-pointer" onclick="document.getElementById('imageUploadInput').click()">
+                                        <i class="fa-solid fa-camera text-3xl mb-2 text-amber-300"></i>
+                                        <span class="text-sm font-semibold">Click to upload your picture</span>
+                                        <span class="text-xs text-slate-300 mt-1">JPEG, PNG or WebP</span>
+                                    </div>
+                                    <input type="file" id="imageUploadInput" accept="image/*" class="hidden" onchange="handleImageUpload(event)">
+                                </div>
+
+                                <!-- Polaroid Footer Details -->
+                                <div class="w-full text-center space-y-1">
+                                    <div class="flex items-center justify-between w-full px-1">
+                                        <span class="font-display font-bold text-slate-900 text-lg">Geeta Rani</span>
+                                        <span class="text-xs font-mono bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-semibold">2024-2028</span>
+                                    </div>
+                                    <p class="text-xs text-slate-500 flex items-center justify-center gap-1">
+                                        <i class="fa-solid fa-code text-amber-500"></i> MERN • Python • OpenAI
+                                    </p>
+                                </div>
+
+                                <!-- Quick Photo Change Helper Button -->
+                                <button onclick="document.getElementById('imageUploadInput').click()" class="mt-3 w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition flex items-center justify-center gap-1.5 border border-slate-200">
+                                    <i class="fa-solid fa-upload text-slate-500"></i> Change Photo
+                                </button>
+                            </div>
+
+                            <!-- Floating Badge 1 -->
+                            <div class="absolute -bottom-5 -left-5 bg-slate-900 text-white p-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-800">
+                                <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center text-lg font-bold">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Featured Skill</div>
+                                    <div class="text-xs font-bold">100+ AR Lenses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-white border-b border-slate-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 space-y-4">
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-md inline-block">Professional Summary</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Driven by curiosity & clean code</h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            I am a 3rd-year Computer Science & Engineering student at Anurag University with a strong academic background (CGPA: 8.35/10) and hands-on experience developing full-stack web applications and AI-driven workflow engines.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            My core expertise spans building scalable MERN stack apps, developing REST APIs in Flask & Node, and incorporating LLM APIs to create tailored solutions for real-world problems.
+                        </p>
+                    </div>
+
+                    <!-- Quick Highlight Cards Grid -->
+                    <div class="md:col-span-7 grid sm:grid-cols-2 gap-4">
+                        
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg font-bold mb-3">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base">Education</h3>
+                            <p class="text-xs text-slate-500 font-medium">Anurag University, Hyderabad</p>
+                            <p class="text-sm font-semibold text-slate-700 mt-2">B.Tech in CSE (3rd Year)</p>
+                            <p class="text-xs text-amber-700 font-bold mt-1">CGPA: 8.35 / 10</p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg font-bold mb-3">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base">Internship Experience</h3>
+                            <p class="text-xs text-slate-500 font-medium">SmartBridge (Completed)</p>
+                            <p class="text-sm font-semibold text-slate-700 mt-2">Software Development Intern</p>
+                            <p class="text-xs text-blue-700 font-bold mt-1">Full-Stack MERN Project</p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg font-bold mb-3">
+                                <i class="fa-solid fa-keyboard"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base">Typewriting Distinction</h3>
+                            <p class="text-xs text-slate-500 font-medium">Telangana State Board</p>
+                            <p class="text-sm font-semibold text-slate-700 mt-2">State Topper Title</p>
+                            <p class="text-xs text-emerald-700 font-bold mt-1">High Speed & Precision Accuracy</p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg font-bold mb-3">
+                                <i class="fa-solid fa-vr-cardboard"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base">AR & Hackathons</h3>
+                            <p class="text-xs text-slate-500 font-medium">Snapchat AR & AI Events</p>
+                            <p class="text-sm font-semibold text-slate-700 mt-2">Created 100+ AR Lenses</p>
+                            <p class="text-xs text-purple-700 font-bold mt-1">Gen AI Hackathon Participant</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 bg-slate-50 border-b border-slate-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-md inline-block mb-3">Industry Training</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Work Experience</h2>
+                    <p class="text-slate-600 mt-2">Hands-on application development in industry-guided programs</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-amber-400 text-slate-950 font-bold text-xs uppercase px-4 py-1.5 rounded-bl-xl">
+                            Completed
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4 mb-6">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Software Development Intern</h3>
+                                <p class="text-amber-700 font-semibold text-sm">SmartBridge</p>
+                            </div>
+                            <div class="text-slate-500 text-xs font-medium flex items-center gap-1.5">
+                                <i class="fa-regular fa-calendar text-amber-500"></i> Internship Program
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="font-display font-bold text-slate-900 text-lg">ShopEZ</span>
+                                <span class="text-xs font-semibold text-slate-500">— E-Commerce Web Application</span>
+                            </div>
+                            
+                            <ul class="space-y-2.5 text-slate-600 text-sm">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>
+                                    <span>Developed a full-stack e-commerce web application using the **MERN stack** (React.js, Node.js, Express.js, MongoDB).</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>
+                                    <span>Built responsive and user-friendly UI using HTML, CSS, JavaScript, React.js, and Bootstrap ensuring a seamless user experience.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>
+                                    <span>Implemented **JWT-based authentication** and authorization for secure user access and role protection.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>
+                                    <span>Designed and developed RESTful APIs for product management, user management, order processing, and analytics.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>
+                                    <span>Implemented seller dashboard for order management, inventory control, and business analytics adhering to **MVC architecture**.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">React.js</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Node.js</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Express.js</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">MongoDB</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">JWT Auth</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 bg-white border-b border-slate-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-md inline-block mb-2">Portfolio Showcase</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Featured Projects</h2>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex flex-wrap gap-2" id="projectFilterBtns">
+                        <button onclick="filterProjects('all')" class="project-filter-btn active bg-slate-900 text-white text-xs font-bold px-4 py-2 rounded-xl transition">All Projects</button>
+                        <button onclick="filterProjects('ai')" class="project-filter-btn bg-slate-100 text-slate-600 hover:bg-slate-200 text-xs font-bold px-4 py-2 rounded-xl transition">Gen AI</button>
+                        <button onclick="filterProjects('web')" class="project-filter-btn bg-slate-100 text-slate-600 hover:bg-slate-200 text-xs font-bold px-4 py-2 rounded-xl transition">Full Stack / Web</button>
+                        <button onclick="filterProjects('python')" class="project-filter-btn bg-slate-100 text-slate-600 hover:bg-slate-200 text-xs font-bold px-4 py-2 rounded-xl transition">Python Apps</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+
+                    <!-- Project 1: Gen AI Curriculum Generator -->
+                    <div class="project-card bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col" data-category="ai python">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-extrabold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-md">Gen AI & Streamlit</span>
+                                <i class="fa-solid fa-sparkles text-amber-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Gen AI Curriculum Generator</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                                An AI-powered application that generates structured learning curricula from user-provided topics with modules, resources, and schedules using OpenAI API integration.
+                            </p>
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs mb-4">
+                                <span class="font-bold text-slate-800">Impact:</span> Helps users quickly generate customized learning roadmaps in seconds.
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">Python</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">Streamlit</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">OpenAI API</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">JSON</span>
+                            </div>
+                            <button onclick="openProjectModal('genai')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-slate-900 bg-white text-slate-800 font-bold text-xs transition flex items-center justify-center gap-2">
+                                View Details & Stack <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Smart Water Billing System -->
+                    <div class="project-card bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col" data-category="web python">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-extrabold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-md">Flask & SQLite</span>
+                                <i class="fa-solid fa-faucet-drip text-blue-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Smart Water Billing System</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                                Flask-based web application built to monitor 100+ water usage records and automate billing cycles with visualization dashboards for payment history.
+                            </p>
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs mb-4">
+                                <span class="font-bold text-slate-800">Impact:</span> Reduced manual billing effort and improved accuracy in the billing cycle.
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">Python</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">Flask</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">SQLite</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">JS Charts</span>
+                            </div>
+                            <button onclick="openProjectModal('water')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-slate-900 bg-white text-slate-800 font-bold text-xs transition flex items-center justify-center gap-2">
+                                View Details & Stack <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Worker Attendance & Payment System -->
+                    <div class="project-card bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col" data-category="python">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-extrabold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-md">Python & OOP</span>
+                                <i class="fa-solid fa-users-gear text-emerald-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Worker Attendance & Payment System</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                                Application tracking attendance for 50+ workers and automating salary calculations with validations for Phone, Aadhaar, and numeric integrity.
+                            </p>
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs mb-4">
+                                <span class="font-bold text-slate-800">Impact:</span> Streamlined attendance tracking and reduced payroll calculation time.
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">Python</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">OOP</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">File Handling</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/80 text-slate-700 text-xs font-medium">Data Validation</span>
+                            </div>
+                            <button onclick="openProjectModal('worker')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-slate-900 bg-white text-slate-800 font-bold text-xs transition flex items-center justify-center gap-2">
+                                View Details & Stack <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="py-16 bg-slate-50 border-b border-slate-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-md inline-block mb-3">Tech Tool Stack</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Technical Skills & Concepts</h2>
+                    <p class="text-slate-600 mt-2">Core tools and frameworks utilized across projects</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Languages -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Languages</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Python</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">JavaScript</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Java</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">C</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Frontend Development</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">React.js</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">HTML5 / CSS3</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Bootstrap</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Responsive UI</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Databases -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Backend & Databases</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Node.js</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Express.js</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Flask</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">RESTful APIs</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">MongoDB</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Tools & Platforms</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Git & GitHub</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Postman</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">VS Code</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">Render</span>
+                        </div>
+                    </div>
+
+                    <!-- Core CS Concepts -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition md:col-span-2 lg:col-span-2">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Core CS Concepts & Architecture</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">Data Structures & Algorithms</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">Object Oriented Programming (OOP)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">MVC Architecture</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">Problem Solving</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">CRUD Operations</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">API Integration</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">Async JavaScript</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="achievements" class="py-16 bg-white border-b border-slate-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    
+                    <!-- Certifications & Activities -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                            <h2 class="text-2xl font-bold text-slate-900">Certifications & Workshops</h2>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold shrink-0">
+                                    <i class="fa-solid fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">NPTEL Certifications</h4>
+                                    <p class="text-xs text-slate-600">Python Programming • Fundamentals of Computer Applications</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-800 flex items-center justify-center font-bold shrink-0">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">AR & Game Workshops</h4>
+                                    <p class="text-xs text-slate-600">Snap Lens AR Workshop (Created 100+ Lenses) • Game Development Workshop</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold shrink-0">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Hackathons & Initiatives</h4>
+                                    <p class="text-xs text-slate-600">Gen AI Hackathon • Volunteer @ InnoQuest #4 Hackathon • NASSCOM AI Code Sarathi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Leadership -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                            <h2 class="text-2xl font-bold text-slate-900">Achievements & Leadership</h2>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-amber-500 to-amber-600 text-slate-950 p-6 rounded-2xl shadow-md space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-slate-950 text-amber-400 flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-extrabold text-lg text-slate-950">State Topper</h3>
+                                    <p class="text-xs font-bold text-slate-900">Telangana State Typewriting Examination</p>
+                                </div>
+                            </div>
+                            <p class="text-xs font-medium text-slate-900 leading-relaxed border-t border-amber-400/60 pt-3">
+                                Demonstrated exceptional high speed and typing accuracy in official state level examinations.
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-lg font-bold shrink-0">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Class Representative (CR)</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Anurag University — Department of CSE</p>
+                                <p class="text-xs text-slate-500 mt-1">Leading batch coordination, student-faculty communication, and technical event execution.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-slate-900 text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mx-auto text-center space-y-6">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400 bg-slate-800 px-3.5 py-1.5 rounded-full inline-block border border-slate-700">Let's Connect</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Interested in collaborating or hiring?</h2>
+                    <p class="text-slate-300 text-base">
+                        Feel free to reach out for software engineering internships, project collaborations, or tech discussions!
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap justify-center gap-4">
+                        <a href="mailto:geetaaa.rani31@gmail.com" class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold px-6 py-3 rounded-xl transition flex items-center gap-2">
+                            <i class="fa-solid fa-envelope"></i> Send Email
+                        </a>
+                        <button onclick="copyContactInfo('9381178039')" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-xl border border-slate-700 transition flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-amber-400"></i> +91 9381178039
+                        </button>
+                        <a href="https://github.com/gitgeetahub" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-xl border border-slate-700 transition flex items-center gap-2">
+                            <i class="fa-brands fa-github text-amber-400"></i> GitHub Profile
+                        </a>
+                    </div>
+
+                    <div class="mt-8 max-w-xl mx-auto text-left bg-slate-800/70 border border-slate-700 rounded-2xl p-5">
+                        <h3 class="text-lg font-bold text-white mb-1">Send me a message</h3>
+                        <p class="text-xs text-slate-400 mb-4">Your message will be securely saved and I can receive an email notification.</p>
+                        <form id="contactForm" class="space-y-3">
+                            <input id="contactName" type="text" required maxlength="80" placeholder="Your name" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-amber-400">
+                            <input id="contactEmail" type="email" required maxlength="160" placeholder="Your email" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-amber-400">
+                            <textarea id="contactMessage" required maxlength="2000" rows="4" placeholder="Your message" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-amber-400 resize-none"></textarea>
+                            <button id="contactSubmit" type="submit" class="w-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold px-6 py-3 rounded-xl transition">
+                                <i class="fa-solid fa-paper-plane mr-1"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="pt-8 text-xs text-slate-400">
+                        Based in Hyderabad, Telangana • B.Tech CSE Student @ Anurag University
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 Guru Geeta Rani Portfolio</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-5 right-5 z-50">
+        <button id="aiChatToggle" onclick="toggleAiChat()" class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold p-4 rounded-full shadow-2xl transition flex items-center gap-2 border-2 border-white">
+            <i class="fa-solid fa-robot text-lg"></i>
+            <span class="text-xs font-bold hidden sm:inline">Ask AI Recruiter</span>
+        </button>
+
+        <!-- Chat Box Window -->
+        <div id="aiChatBox" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden text-slate-800 flex flex-col h-[420px]">
+            <div class="bg-slate-900 text-white p-3.5 flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-lg bg-amber-400 text-slate-950 flex items-center justify-center font-bold text-sm">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold">Geeta's AI Assistant</div>
+                        <div class="text-[10px] text-emerald-400 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Online
+                        </div>
+                    </div>
+                </div>
+                <button onclick="toggleAiChat()" class="text-slate-400 hover:text-white text-sm px-2">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="chatMessages" class="flex-1 p-3.5 overflow-y-auto space-y-3 text-xs bg-slate-50">
+                <div class="bg-white p-3 rounded-xl border border-slate-200 max-w-[85%] text-slate-700">
+                    Hi! I'm Geeta's AI recruiter assistant. Ask me about her CGPA, skills, projects, or internship!
+                </div>
+            </div>
+
+            <div class="p-2 border-t border-slate-200 bg-white flex gap-1">
+                <input type="text" id="chatInput" placeholder="Type a question..." class="flex-1 text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-amber-400" onkeypress="handleChatKeyPress(event)">
+                <button onclick="sendChatMessage()" class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold px-3 py-2 rounded-xl text-xs">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 relative shadow-2xl border border-slate-200">
+            <button onclick="closeResumeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="border-b border-slate-200 pb-4 mb-4">
+                <h3 class="text-2xl font-extrabold text-slate-900">Resume Details</h3>
+                <p class="text-xs text-slate-500">Guru Geeta Rani • Anurag University (3rd Year)</p>
+            </div>
+
+            <div class="space-y-4 text-xs text-slate-700 leading-relaxed">
+                <div class="bg-amber-50 p-3 rounded-xl border border-amber-200">
+                    <span class="font-bold text-amber-900">Summary:</span>
+                    Third-year CSE student with hands-on MERN stack, Python, Flask, & OpenAI API experience.
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1">Education</h4>
+                    <p>B.Tech CSE @ Anurag University, Hyderabad (3rd Year) | <strong>CGPA: 8.35/10</strong></p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1">Internship</h4>
+                    <p><strong>Software Development Intern @ SmartBridge</strong> — Built ShopEZ MERN e-commerce application with JWT & REST APIs.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1">Projects</h4>
+                    <ul class="list-disc pl-4 space-y-1">
+                        <li><strong>Smart Water Billing System:</strong> Flask, SQLite, Automated billing.</li>
+                        <li><strong>Worker Attendance & Payment System:</strong> Python, OOP, Aadhaar/Phone validation.</li>
+                        <li><strong>Gen AI Curriculum Generator:</strong> Python, Streamlit, OpenAI API integration.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-200 flex justify-end gap-3">
+                <button onclick="closeResumeModal()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl">Close</button>
+                <button onclick="copyContactInfo('geetaaa.rani31@gmail.com')" class="px-4 py-2 bg-amber-400 hover:bg-amber-500 text-slate-950 text-xs font-bold rounded-xl">Contact Candidate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generic Project Details Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 relative shadow-2xl border border-slate-200">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="projectModalContent"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed top-24 right-5 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-xl z-50 hidden text-xs font-semibold flex items-center gap-2 border border-slate-800">
+        <i class="fa-solid fa-circle-check text-amber-400"></i>
+        <span id="toastMsg">Action completed!</span>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Image Upload Handler for Hero Polaroid Frame
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('heroAvatar').src = e.target.result;
+                    showToast("Profile image updated successfully!");
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Copy Contact Helper using document.execCommand fallback safety
+        function copyContactInfo(text) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast("Copied to clipboard: " + text);
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 3000);
+        }
+
+        // Project Filters
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const btns = document.querySelectorAll('.project-filter-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-slate-900', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-600');
+            });
+
+            event.target.classList.remove('bg-slate-100', 'text-slate-600');
+            event.target.classList.add('bg-slate-900', 'text-white');
+
+            cards.forEach(card => {
+                const cats = card.getAttribute('data-category');
+                if (category === 'all' || cats.includes(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Project Detail Modal Data
+        const projectData = {
+            genai: {
+                title: "Gen AI Curriculum Generator",
+                badge: "Streamlit + OpenAI API",
+                desc: "An intelligent learning roadmap generator designed to curate topics, study schedules, module breakdowns, and resources automatically using OpenAI LLMs.",
+                highlights: [
+                    "Automated topic decomposition into structured modules",
+                    "Integrated resource links and time estimates",
+                    "Personalized learning path customization",
+                    "Impact: Generates roadmaps in under 5 seconds"
+                ],
+                stack: ["Python", "Streamlit", "OpenAI API", "JSON"]
+            },
+            water: {
+                title: "Smart Water Billing System",
+                badge: "Flask + SQLite",
+                desc: "A full-stack monitoring and automated billing web portal designed to track 100+ water usage records.",
+                highlights: [
+                    "RESTful APIs for automated bill calculations",
+                    "Usage visualization dashboards",
+                    "Payment history and invoice tracking",
+                    "Impact: Reduced manual billing effort substantially"
+                ],
+                stack: ["Python", "Flask", "SQLite", "HTML/CSS", "JavaScript"]
+            },
+            worker: {
+                title: "Worker Attendance & Payment System",
+                badge: "Python Core",
+                desc: "An automated payroll system for 50+ workers incorporating field validations for Aadhaar and Phone details.",
+                highlights: [
+                    "OOP based modular application design",
+                    "Strict field validation for numeric data accuracy",
+                    "Automated daily salary calculations",
+                    "Impact: Streamlined tracking & saved payroll processing time"
+                ],
+                stack: ["Python", "OOP", "File Handling", "Data Validation"]
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = projectData[key];
+            if (!data) return;
+
+            const modalContent = document.getElementById('projectModalContent');
+            modalContent.innerHTML = `
+                <div class="mb-3">
+                    <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-md">${data.badge}</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 mb-2">${data.title}</h3>
+                <p class="text-xs text-slate-600 mb-4 leading-relaxed">${data.desc}</p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">Key Features & Impact:</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-600">
+                        ${data.highlights.map(h => `<li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> ${h}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="flex flex-wrap gap-1.5 mb-6">
+                    ${data.stack.map(s => `<span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-xs font-semibold">${s}</span>`).join('')}
+                </div>
+                <div class="flex justify-end">
+                    <button onclick="closeProjectModal()" class="px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold">Close Details</button>
+                </div>
+            `;
+            document.getElementById('projectModal').classList.remove('hidden');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+        }
+
+        // Resume Modal Handlers
+        function openResumeModal() {
+            document.getElementById('resumeModal').classList.remove('hidden');
+        }
+
+        function closeResumeModal() {
+            document.getElementById('resumeModal').classList.add('hidden');
+        }
+
+        // AI Chat Assistant Toggle & Logic
+        function toggleAiChat() {
+            const chatBox = document.getElementById('aiChatBox');
+            chatBox.classList.toggle('hidden');
+        }
+
+        function handleChatKeyPress(e) {
+            if (e.key === 'Enter') sendChatMessage();
+        }
+
+        const chatHistory = [];
+
+        async function sendChatMessage() {
+    const input = document.getElementById('chatInput');
+    const message = input.value.trim();
+
+    if (!message) return;
+
+    appendMessage(message, 'user');
+    input.value = '';
+
+    try {
+        const response = await fetch('http://localhost:5000/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: message,
+                history: []
+            })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.error || 'AI request failed');
+        }
+
+        appendMessage(data.reply, 'bot');
+
+    } catch (error) {
+        console.error('Chat error:', error);
+
+        appendMessage(
+            'Sorry, I am unable to respond right now. Please try again.',
+            'bot'
+        );
+    }
+}
+
+        function removeMessage(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        function appendMessage(text, sender) {
+            const chatMessages = document.getElementById('chatMessages');
+            const msgDiv = document.createElement('div');
+            const id = 'msg-' + Date.now() + '-' + Math.random().toString(16).slice(2);
+            msgDiv.id = id;
+            if (sender === 'user') {
+                msgDiv.className = 'bg-amber-400 text-slate-950 p-2.5 rounded-xl ml-auto max-w-[85%] text-xs font-medium shadow-sm';
+            } else {
+                msgDiv.className = 'bg-white p-3 rounded-xl border border-slate-200 max-w-[85%] text-slate-700 text-xs shadow-sm';
+            }
+            msgDiv.innerText = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            return id;
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const button = document.getElementById('contactSubmit');
+            const originalText = button.innerHTML;
+            button.disabled = true;
+            button.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Sending...';
+
+            try {
+                const response = await fetch('http://localhost:5000/api/messages', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: document.getElementById('contactName').value.trim(),
+                        email: document.getElementById('contactEmail').value.trim(),
+                        message: document.getElementById('contactMessage').value.trim()
+                    })
+                });
+
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || 'Unable to send message');
+
+                document.getElementById('contactForm').reset();
+                showToast('Message sent successfully!');
+            } catch (error) {
+                console.error(error);
+                showToast('Could not send message. Please try again.');
+            } finally {
+                button.disabled = false;
+                button.innerHTML = originalText;
+            }
+        });
+    </script>
+</body>
+</html>
